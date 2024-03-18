@@ -1,4 +1,4 @@
-import { list, check, todo, home } from "./Icons";
+import { check, home, list, todo } from "./Icons";
 
 const menu = [
   {

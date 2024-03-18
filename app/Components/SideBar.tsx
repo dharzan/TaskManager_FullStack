@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import styled from "styled-components";
 import { useGlobalState } from "./../context/globalProvider";
 import menu from "./../utils/utils/menu";
@@ -34,7 +34,7 @@ const SideBar = () => {
         <ul className="navItem">
           {menu.map((item) => {
             return (
-              <li className="navItem" onClick={() =>handleClick}>
+              <li className={`nav-item`} onClick={() =>handleClick}>
                 {item.icon} <Link href={item.link}>{item.title}</Link>
               </li>
             );
